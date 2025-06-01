@@ -1,12 +1,6 @@
 import { test } from '@playwright/test';
 import { expect } from '../fixtures/custom-expect';
-
-export interface ActivitiesResponse {
-  id: number;
-  title: string;
-  dueDate: string;
-  completed: boolean;
-}
+import { ActivitiesResponse } from '../models';
 
 test('Custom expect test', async ({ request }) => {
   const response = await request.get('https://fakerestapi.azurewebsites.net/api/v1/Activities');

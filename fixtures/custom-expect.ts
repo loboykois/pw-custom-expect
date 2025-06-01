@@ -1,5 +1,5 @@
 import { expect as base } from '@playwright/test';
-import { ActivitiesResponse } from '../tests/custom-expect.spec';
+import { ActivitiesResponse } from '../models';
 
 type ResponseType = ActivitiesResponse | ActivitiesResponse[];
 
